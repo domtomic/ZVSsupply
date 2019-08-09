@@ -17,9 +17,9 @@ $Comp
 L Transistor_FET:IRF540N Q1
 U 1 1 5D45BFA6
 P 5500 2600
-F 0 "Q1" H 5706 2646 50  0000 L CNN
-F 1 "IRF540N" H 5706 2555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5750 2525 50  0001 L CIN
+F 0 "Q1" H 5455 2757 50  0000 L CNN
+F 1 "IRFP250" H 5300 2850 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5750 2525 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5500 2600 50  0001 L CNN
 	1    5500 2600
 	1    0    0    -1  
@@ -28,9 +28,9 @@ $Comp
 L Transistor_FET:IRF540N Q2
 U 1 1 5D45E912
 P 5500 3300
-F 0 "Q2" H 5706 3346 50  0000 L CNN
-F 1 "IRF540N" H 5706 3255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5750 3225 50  0001 L CIN
+F 0 "Q2" H 5486 3470 50  0000 L CNN
+F 1 "IRFP250" H 5290 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5750 3225 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5500 3300 50  0001 L CNN
 	1    5500 3300
 	1    0    0    -1  
@@ -177,17 +177,6 @@ Wire Wire Line
 	4650 2950 3600 2950
 Wire Wire Line
 	4050 3950 3930 3950
-$Comp
-L Connector:Conn_01x03_Female J2
-U 1 1 5D476988
-P 7000 3150
-F 0 "J2" H 7028 3176 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 7028 3085 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Right" H 7000 3150 50  0001 C CNN
-F 3 "~" H 7000 3150 50  0001 C CNN
-	1    7000 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6800 3150 6500 3150
 Wire Wire Line
@@ -218,7 +207,7 @@ U 1 1 5D47AC12
 P 2460 2510
 F 0 "J1" H 2460 2240 50  0000 C CNN
 F 1 "ulaz" H 2460 2320 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 2460 2510 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2460 2510 50  0001 C CNN
 F 3 "~" H 2460 2510 50  0001 C CNN
 	1    2460 2510
 	-1   0    0    1   
@@ -383,4 +372,48 @@ Wire Wire Line
 Connection ~ 4570 2450
 Wire Wire Line
 	4570 2450 4650 2450
+$Comp
+L Mechanical:Heatsink HS2
+U 1 1 5D4CAB39
+P 5700 3300
+F 0 "HS2" V 5519 3313 50  0000 L CNN
+F 1 "Heatsink" V 5744 3480 50  0001 L CNN
+F 2 "Heatsink:Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35" H 5712 3300 50  0001 C CNN
+F 3 "~" H 5712 3300 50  0001 C CNN
+	1    5700 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 5D4D30EC
+P 7000 3050
+F 0 "J2" H 7028 3076 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 7028 2985 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7000 3050 50  0001 C CNN
+F 3 "~" H 7000 3050 50  0001 C CNN
+	1    7000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5D4D3968
+P 7000 3150
+F 0 "J3" H 7028 3176 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 7028 3085 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7000 3150 50  0001 C CNN
+F 3 "~" H 7000 3150 50  0001 C CNN
+	1    7000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 5D4D3A48
+P 7000 3250
+F 0 "J4" H 7028 3276 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 7028 3185 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7000 3250 50  0001 C CNN
+F 3 "~" H 7000 3250 50  0001 C CNN
+	1    7000 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
