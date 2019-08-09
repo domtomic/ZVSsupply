@@ -17,23 +17,23 @@ $EndDescr
 $Comp
 L Transistor_FET:IRF540N Q1
 U 1 1 5D45BFA6
-P 5500 2600
-F 0 "Q1" H 5455 2757 50  0000 L CNN
-F 1 "IRFP250" H 5300 2850 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5750 2525 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5500 2600 50  0001 L CNN
-	1    5500 2600
+P 5460 2450
+F 0 "Q1" H 5415 2607 50  0000 L CNN
+F 1 "IRFP250" H 5260 2700 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5710 2375 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5460 2450 50  0001 L CNN
+	1    5460 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_FET:IRF540N Q2
 U 1 1 5D45E912
-P 5500 3360
-F 0 "Q2" H 5486 3530 50  0000 L CNN
-F 1 "IRFP250" H 5290 3615 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5750 3285 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5500 3360 50  0001 L CNN
-	1    5500 3360
+P 5460 3550
+F 0 "Q2" H 5446 3720 50  0000 L CNN
+F 1 "IRFP250" H 5250 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5710 3475 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5460 3550 50  0001 L CNN
+	1    5460 3550
 	1    0    0    1   
 $EndComp
 $Comp
@@ -136,10 +136,6 @@ F 3 "~" H 4950 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5300 2600 5300 2450
-Wire Wire Line
-	5600 2800 5600 2950
-Wire Wire Line
 	4050 2450 4050 3500
 Wire Wire Line
 	6150 3950 4350 3950
@@ -153,14 +149,7 @@ Wire Wire Line
 	4550 3850 5900 3850
 Wire Wire Line
 	5900 3850 5900 2400
-Connection ~ 5900 2400
-Wire Wire Line
-	5900 2400 5600 2400
-Wire Wire Line
-	5600 2950 4950 2950
 Connection ~ 4950 2950
-Wire Wire Line
-	4950 2950 4950 3050
 Wire Wire Line
 	4950 2950 4650 2950
 Connection ~ 4650 2950
@@ -198,7 +187,7 @@ U 1 1 5D47AC12
 P 2460 2510
 F 0 "J1" H 2460 2240 50  0000 C CNN
 F 1 "ulaz" H 2460 2320 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2460 2510 50  0001 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 2460 2510 50  0001 C CNN
 F 3 "~" H 2460 2510 50  0001 C CNN
 	1    2460 2510
 	-1   0    0    1   
@@ -223,8 +212,6 @@ Wire Wire Line
 	3600 2600 3600 2950
 Connection ~ 3600 2950
 Wire Wire Line
-	4650 2950 4650 3050
-Wire Wire Line
 	4550 3500 4650 3500
 Wire Wire Line
 	4950 3350 4950 3500
@@ -235,9 +222,6 @@ Wire Wire Line
 	4650 3500 4950 3500
 Wire Wire Line
 	4950 2550 4950 2450
-Connection ~ 4950 2450
-Wire Wire Line
-	4950 2450 5300 2450
 Wire Wire Line
 	4650 2550 4650 2450
 Wire Wire Line
@@ -246,9 +230,6 @@ Wire Wire Line
 	4650 2850 4650 2950
 Wire Wire Line
 	4950 2850 4950 2950
-Wire Wire Line
-	4950 3500 5300 3500
-Connection ~ 4950 3500
 $Comp
 L power:VDD #PWR0101
 U 1 1 5D4A608B
@@ -395,15 +376,70 @@ F 3 "~" H 7000 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 3250 6150 3560
+	6150 3250 6150 3750
 Wire Wire Line
-	5600 3160 5600 2950
-Connection ~ 5600 2950
+	5260 3550 4950 3550
 Wire Wire Line
-	5300 3500 5300 3360
+	4950 3550 4950 3500
+Connection ~ 4950 3500
 Wire Wire Line
-	5600 3560 6150 3560
-Connection ~ 6150 3560
+	5560 3750 6150 3750
+Connection ~ 6150 3750
 Wire Wire Line
-	6150 3560 6150 3950
+	6150 3750 6150 3950
+Wire Wire Line
+	5560 2650 5560 2680
+Wire Wire Line
+	5560 2250 5900 2250
+Wire Wire Line
+	5900 2250 5900 2400
+Connection ~ 5900 2400
+Wire Wire Line
+	4950 2450 5260 2450
+Connection ~ 4950 2450
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 5D51B3AB
+P 5560 2910
+F 0 "J5" V 5406 2958 50  0000 L CNN
+F 1 "VEE_JUMPER" V 5497 2958 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5560 2910 50  0001 C CNN
+F 3 "~" H 5560 2910 50  0001 C CNN
+	1    5560 2910
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 5D51BBF3
+P 5560 3110
+F 0 "J6" V 5498 3022 50  0000 R CNN
+F 1 "VEE_JUMPER" V 5407 3022 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5560 3110 50  0001 C CNN
+F 3 "~" H 5560 3110 50  0001 C CNN
+	1    5560 3110
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 2950 5430 2950
+Wire Wire Line
+	5560 3310 5560 3330
+Wire Wire Line
+	5430 2950 5430 2680
+Wire Wire Line
+	5430 2680 5560 2680
+Connection ~ 5560 2680
+Wire Wire Line
+	5560 2680 5560 2710
+Wire Wire Line
+	4650 3050 4950 3050
+Wire Wire Line
+	5560 3330 5220 3330
+Wire Wire Line
+	5220 3330 5220 3050
+Wire Wire Line
+	5220 3050 4950 3050
+Connection ~ 5560 3330
+Wire Wire Line
+	5560 3330 5560 3350
+Connection ~ 4950 3050
 $EndSCHEMATC
