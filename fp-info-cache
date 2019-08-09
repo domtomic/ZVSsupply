@@ -1,4 +1,4 @@
-15975174705081717
+15983000011798907
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49083,6 +49083,13 @@ Yellow 5381 Series LED
 0
 2
 2
+Ljuta zavojnica ZVS
+zvsojnica
+
+
+0
+2
+2
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -70342,6 +70349,13 @@ test point THT pad
 0
 1
 1
+TO-247
+TO-247
+
+
+0
+3
+3
 Transformer_SMD
 Pulse_P0926NL
 SMT Gate Drive Transformer, 1:1:1, 8.0x6.3x5.3mm (https://productfinder.pulseeng.com/products/datasheets/SPM2007_61.pdf)
@@ -71690,6 +71704,27 @@ Varistor
 RV_Disc_D21.5mm_W11.4mm_P10mm
 Varistor, diameter 21.5mm, width 11.4mm, pitch 10mm
 varistor SIOV
+0
+2
+2
+ZVSsupply
+ICM_logo
+
+
+0
+0
+0
+ZVSsupply
+ICM_logo_negative
+
+
+0
+0
+0
+ZVSsupply
+zvsojnica
+
+
 0
 2
 2

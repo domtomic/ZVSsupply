@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:zvs_napajanje-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -27,13 +28,13 @@ $EndComp
 $Comp
 L Transistor_FET:IRF540N Q2
 U 1 1 5D45E912
-P 5500 3300
-F 0 "Q2" H 5486 3470 50  0000 L CNN
-F 1 "IRFP250" H 5290 3555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5750 3225 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5500 3300 50  0001 L CNN
-	1    5500 3300
-	1    0    0    -1  
+P 5500 3360
+F 0 "Q2" H 5486 3530 50  0000 L CNN
+F 1 "IRFP250" H 5290 3615 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5750 3285 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5500 3360 50  0001 L CNN
+	1    5500 3360
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R1
@@ -139,16 +140,9 @@ Wire Wire Line
 Wire Wire Line
 	5600 2800 5600 2950
 Wire Wire Line
-	5600 3500 6150 3500
-Wire Wire Line
-	6150 3500 6150 3250
-Wire Wire Line
 	4050 2450 4050 3500
 Wire Wire Line
-	6150 3500 6150 3950
-Wire Wire Line
 	6150 3950 4350 3950
-Connection ~ 6150 3500
 Wire Wire Line
 	4550 3500 4550 3550
 Wire Wire Line
@@ -164,9 +158,6 @@ Wire Wire Line
 	5900 2400 5600 2400
 Wire Wire Line
 	5600 2950 4950 2950
-Connection ~ 5600 2950
-Wire Wire Line
-	5600 2950 5600 3100
 Connection ~ 4950 2950
 Wire Wire Line
 	4950 2950 4950 3050
@@ -257,8 +248,6 @@ Wire Wire Line
 	4950 2850 4950 2950
 Wire Wire Line
 	4950 3500 5300 3500
-Wire Wire Line
-	5300 3500 5300 3300
 Connection ~ 4950 3500
 $Comp
 L power:VDD #PWR0101
@@ -373,17 +362,6 @@ Connection ~ 4570 2450
 Wire Wire Line
 	4570 2450 4650 2450
 $Comp
-L Mechanical:Heatsink HS2
-U 1 1 5D4CAB39
-P 5700 3300
-F 0 "HS2" V 5519 3313 50  0000 L CNN
-F 1 "Heatsink" V 5744 3480 50  0001 L CNN
-F 2 "Heatsink:Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35" H 5712 3300 50  0001 C CNN
-F 3 "~" H 5712 3300 50  0001 C CNN
-	1    5700 3300
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x01_Female J2
 U 1 1 5D4D30EC
 P 7000 3050
@@ -416,4 +394,16 @@ F 3 "~" H 7000 3250 50  0001 C CNN
 	1    7000 3250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6150 3250 6150 3560
+Wire Wire Line
+	5600 3160 5600 2950
+Connection ~ 5600 2950
+Wire Wire Line
+	5300 3500 5300 3360
+Wire Wire Line
+	5600 3560 6150 3560
+Connection ~ 6150 3560
+Wire Wire Line
+	6150 3560 6150 3950
 $EndSCHEMATC
